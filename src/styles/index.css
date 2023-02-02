@@ -1,12 +1,91 @@
 
-/* 
+.itemAligner {
+    display: flex;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+.switchButton {
+    position: relative;
+    right: 400px;
+    top: 100px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: yellow;
+
+}
+
+.trafficLightFrame {
+    position: relative;
+    left: 300px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    background-color: black;
+    width: 250px;
+    height: 700px;
+    border: 3px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.redOff {
+    margin-top: 20px;
+    margin-bottom: 7px;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 50%;
+
+}
+
+.redOn {
+    margin-top: 20px;
+    margin-bottom: 7px;
+    height: 200px;
+    width: 200px;
+    background: red;
+    box-shadow: 0 0 50px #fff;
+    border-radius: 50%;
+}
+
+.orangeOff {
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-bottom: 7px;
+    text-align: center;
+
+}
+
+.orangeOn {
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-bottom: 7px;
+    box-shadow: 0 0 50px #fff;
+    text-align: center;
+
+}
+
+.greenOff {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+
+.greenOn {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    border-radius: 50%;
+    margin-bottom: 7px;
+    box-shadow: 0 0 50px #fff;
+    text-align: center;
+
+}
