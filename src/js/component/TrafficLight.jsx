@@ -10,18 +10,23 @@ const [greenOn, setGreenOn] = useState (false);
 let colors = ["redOn", "orangeOn", "greenOn" ]
 
 const switchRedOn = () => {
-setRedOn(!redOn);
+setRedOn(false);
+setOrangeOn(true);
+setGreenOn(true);
 }
 
 const switchOrangeOn = () => {
-setOrangeOn(!orangeOn);
+setOrangeOn(false);
+setGreenOn(true);
+setRedOn(true);
 }
 
 const switchGreenOn = () => {
-setGreenOn(!greenOn);
+setGreenOn(false);
+setRedOn(true);
+setOrangeOn(true);
 }
 
-console.log("hola pringao");
 
 return (
 <div className="itemAligner">
@@ -29,7 +34,7 @@ return (
         <div className={redOn ? 'redOff' : 'redOn'} onClick={switchRedOn}></div>
         <div className={orangeOn ? 'orangeOff' : 'orangeOn'} onClick={switchOrangeOn}></div>
         <div className={greenOn ? 'greenOff' : 'greenOn'} onClick={switchGreenOn}></div>
-        <p>hello</p>
+        
     </div>
 </div>
 
@@ -43,30 +48,3 @@ export default TrafficLight;
 
 
 
-// return (
-// <div className="itemAligner">
-//     <div className="trafficLightFrame">
-//         <div className={`redOff ${redOn ? "redOff" : "redOn"}`} onClick={() => setRedOn(!redOn)}></div>
-//         <div className="orangeOff" onClick={() => encendido()}></div>
-//         <div className="greenOff" onClick={() => encendido()}></div>
-//         <p>hello</p>
-//     </div>
-// </div>
-
-// );
-
-
-
-
-//   const [isActive, setActive] = useState(false);
-//   const toggleClass = () => {
-//     setActive(!isActive);
-//   };
-//   return (
-//     <div 
-//       className={isActive ? 'your_className': null} 
-//       onClick={toggleClass} 
-//     >
-//       <p>my text</p>
-//     </div>
-//    );
